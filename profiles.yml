@@ -1,0 +1,15 @@
+
+fredrick:
+  outputs:
+    dev:
+      type: postgres
+      threads: 8
+      host: localhost
+      user: postgres
+      pass: Himmler45
+      port: 5432
+      dbname: Shopdb
+      schema: dbt_fredrick # e.g. dbt_alice
+  target: dev
+
+
