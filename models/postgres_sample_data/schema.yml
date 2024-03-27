@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: Shopdb
+    database: Shopdb
+    schema: public
+    tables:
+      - name: customer
+      - name: orderitem
+      - name: orders
+      - name: product
+      - name: productcategory
