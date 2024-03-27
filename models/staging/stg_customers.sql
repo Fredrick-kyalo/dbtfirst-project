@@ -1,5 +1,3 @@
---Common table experessions
-
 with shopdb_customers as(
     select * from {{ source('Shopdb', 'customer') }}
 ),
