@@ -17,6 +17,10 @@ clean-targets:
     - "target"
     - "dbt_modules"
 
+models:
+    first_project:
+
+
 
 
 
