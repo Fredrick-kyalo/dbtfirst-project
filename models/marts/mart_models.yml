@@ -1,0 +1,33 @@
+models:
+  - name: mart_category_products_orders
+    description: |
+      A materialized view to aggregate product orders by category.
+      This mart combines data from the stg_product, stg_product_category, and stg_orderitem tables.
+    columns:
+      - name: category_name
+        description: The name of the product category.
+      - name: product_name
+        description: The name of the product.
+      - name: product_id
+        description: The unique identifier for the product.
+      - name: order_id
+        description: The unique identifier for the order.
+      - name: subtotal
+        description: The subtotal for the order item.
+      - name: total_category_price
+        description: The total monetary value of orders for each product category.
+
+  - name: mart_customer_monetary_value
+    description: |
+      A materialized view to calculate the total monetary value for each customer.
+      This mart aggregates data from the stg_customers, stg_orders, and stg_orderitem tables.
+    columns:
+      - name: customer_id
+        description: The unique identifier for each customer.
+      - name: first_name
+        description: The first name of the customer.
+      - name: email
+        description: The email address of the customer.
+      - name: total_monetary_value
+        description: The total monetary value spent by the customer on purchases.
+

@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_orderitem
+    description: |
+      This model represents the raw data from the 'orderitem' table in the Shopdb source.
+  - name: stg_customers
+    description: |
+      This model represents the raw data from the 'customer' table in the Shopdb source.
+  - name: stg_orders
+    description: |
+      This model represents the raw data from the 'order' table in the Shopdb source.
+  - name: stg_product
+    description: |
+      This model represents the raw data from the 'product' table in the Shopdb source.
+  - name: stg_product_category
+    description: |
+      This model represents the raw data from the 'productcategory' table in the Shopdb source.
+
+  - name: stg_customers
+    columns: 
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+
+  
